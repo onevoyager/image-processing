@@ -1,0 +1,11 @@
+<h1>Processed Images</h1>
+<% @images.each do |image| %>
+  <div>
+    <%= image_tag(image.image_file.url) %>
+    <h2><%= image.title %></h2>
+    <p><%= image.description %></p>
+    <p>By <%= image.author %></p>
+    <%= link_to 'Download', image.image_file.url %>
+    <%= link_to 'Download', download_image_path(image) %>
+  </div>
+<% end %>
