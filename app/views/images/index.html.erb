@@ -5,7 +5,7 @@
     <h2><%= image.title %></h2>
     <p><%= image.description %></p>
     <p>By <%= image.author %></p>
-    <%= link_to 'view', image.image_file.url %>
+    <%= link_to 'View', image.image_file.url %>
     <%= link_to 'Download', download_image_path(image) %>
   </div>
 <% end %>
